@@ -1,7 +1,69 @@
+html {
+  font-size: 10px;
+}
+/* html,
 body {
+  height: 100%;
+  margin: 0;
+} */
+body {
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #202229;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 40%;
+  height: 40rem;
+  overflow: hidden;
+  background-color: red;
+  /* border: 1px solid greenyellow; */
+}
+.slider-track {
+  display: flex;
+  /* transition: transform 0.5s ease; */
+  /* width: 100%; */
+  /* background-color: #fff; */
+  /* border: 1px solid yellow; */
+  /* width: 700%; */
+  height: 100%;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* width: 100%; */
+}
+.labels {
+  display: inline-flex;
+  /* background-color: red; */
+  /* padding: 5px; */
+  gap: 6px;
+}
+label {
+  cursor: pointer;
+  padding: 7px;
+}
+label .style-label {
+  width: 15px;
+  height: 15px;
+  background-color: #4b5fb1;
+  border-radius: 50%;
+  transition: background 0.4s ease;
+  /* padding: 5px; */
+  /* margin: 5px; */
+}
+
+.radio {
+  visibility: hidden;
+}
+
+/* hover */
+
+label:hover .style-label {
+  background-color: #fff;
 }

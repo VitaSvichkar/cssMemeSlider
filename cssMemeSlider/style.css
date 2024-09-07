@@ -1,13 +1,8 @@
 html {
   font-size: 10px;
 }
-/* html,
+
 body {
-  height: 100%;
-  margin: 0;
-} */
-body {
-  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,55 +10,102 @@ body {
   background-color: #202229;
 }
 
+/* SLIDER */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
 .slider {
-  margin: 0 auto;
-  width: 40%;
+  width: 70rem;
   height: 40rem;
   overflow: hidden;
   background-color: red;
   /* border: 1px solid greenyellow; */
 }
+
 .slider-track {
   display: flex;
-  /* transition: transform 0.5s ease; */
-  /* width: 100%; */
-  /* background-color: #fff; */
-  /* border: 1px solid yellow; */
-  /* width: 700%; */
+  width: calc(70rem * 5);
+  transition: all 0.5s ease;
   height: 100%;
 }
+
+.image {
+  width: 100%;
+}
+
 .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* width: 100%; */
 }
+
+/* LABEL */
+
 .labels {
   display: inline-flex;
-  /* background-color: red; */
-  /* padding: 5px; */
   gap: 6px;
 }
+
 label {
   cursor: pointer;
   padding: 7px;
 }
+
 label .style-label {
   width: 15px;
   height: 15px;
   background-color: #4b5fb1;
   border-radius: 50%;
-  transition: background 0.4s ease;
-  /* padding: 5px; */
-  /* margin: 5px; */
+  transition: background 0.5s ease;
 }
 
-.radio {
-  visibility: hidden;
+/* INPUT radio */
+
+input {
+  /* visibility: hidden; */
+  display: none;
+}
+
+#radio1:checked ~ .slider-track {
+  transform: translateX(0);
+}
+
+.slider #radio1:checked ~ .labels label[for='radio1'] .style-label {
+  background-color: #f00;
+}
+
+#radio2:checked ~ .slider-track {
+  transform: translateX(-20%);
+}
+
+#radio3:checked ~ .slider-track {
+  transform: translateX(-40%);
+}
+
+#radio4:checked ~ .slider-track {
+  transform: translateX(-60%);
+}
+
+#radio5:checked ~ .slider-track {
+  transform: translateX(-80%);
+}
+
+#radio6:checked ~ .slider-track {
+  transform: translateX(-100%);
+}
+
+#radio7:checked ~ .slider-track {
+  transform: translateX(-6%);
 }
 
 /* hover */
 
 label:hover .style-label {
   background-color: #fff;
+}
+label:checked {
+  border: 2px solid red;
 }

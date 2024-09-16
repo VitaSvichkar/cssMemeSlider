@@ -30,7 +30,8 @@ body {
 
 .slider-track {
   display: flex;
-  width: calc(55rem * 5);
+  /* width: calc(55rem * 5); */
+  width: 500%;
   transition: all 0.5s ease;
   /* height: 100%; */
 }
@@ -90,7 +91,7 @@ label .style-label {
   height: 1.5rem;
   background-color: #4b5fb1;
   border-radius: 50%;
-  transition: background 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 /* INPUT radio */
@@ -144,13 +145,59 @@ input {
   background-color: transparent;
 }
 
-/* #radio6:checked ~ .slider-track {
-  transform: translateX(-100%);
+/* CHECKED LABEL HOVER */
+
+.slider #radio1:checked ~ .labels label[for='radio1']:hover .style-label {
+  border: 2px solid #4bb192;
+  background-color: transparent;
 }
 
-#radio7:checked ~ .slider-track {
-  transform: translateX(-6%);
-} */
+.slider #radio2:checked ~ .labels label[for='radio2']:hover .style-label {
+  border: 2px solid #4bb192;
+  background-color: transparent;
+}
+
+.slider #radio3:checked ~ .labels label[for='radio3']:hover .style-label {
+  border: 2px solid #4bb192;
+  background-color: transparent;
+}
+
+.slider #radio4:checked ~ .labels label[for='radio4']:hover .style-label {
+  border: 2px solid #4bb192;
+  background-color: transparent;
+}
+
+.slider #radio5:checked ~ .labels label[for='radio5']:hover .style-label {
+  border: 2px solid #4bb192;
+  background-color: transparent;
+}
+
+/* CHECKED LABEL ACTIVE */
+
+.slider #radio1:checked ~ .labels label[for='radio1']:active .style-label {
+  border: 2px solid #083443;
+  background-color: transparent;
+}
+
+.slider #radio2:checked ~ .labels label[for='radio2']:active .style-label {
+  border: 2px solid #083443;
+  background-color: transparent;
+}
+
+.slider #radio3:checked ~ .labels label[for='radio3']:active .style-label {
+  border: 2px solid #083443;
+  background-color: transparent;
+}
+
+.slider #radio4:checked ~ .labels label[for='radio4']:active .style-label {
+  border: 2px solid #083443;
+  background-color: transparent;
+}
+
+.slider #radio5:checked ~ .labels label[for='radio5']:active .style-label {
+  border: 2px solid #083443;
+  background-color: transparent;
+}
 
 #radio1:checked ~ .description .description-track {
   transform: translateX(0);
@@ -176,8 +223,9 @@ input {
 label:hover .style-label {
   background-color: #fff;
 }
-label:checked {
-  border: 2px solid red;
+
+label:active .style-label {
+  background-color: #083443;
 }
 
 @media screen and (max-width: 520px) {

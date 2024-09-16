@@ -23,16 +23,16 @@ body {
 }
 
 .slider-window {
-  max-width: 50rem;
-  max-height: 50rem;
+  max-width: 55rem;
+  max-height: 65rem;
   overflow: hidden;
 }
 
 .slider-track {
   display: flex;
-  width: calc(50rem * 5);
+  width: calc(55rem * 5);
   transition: all 0.5s ease;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .description {
@@ -59,6 +59,7 @@ body {
 }
 .image {
   width: 100%;
+  /* object-fit: contain; */
 }
 
 .img {
@@ -185,12 +186,12 @@ label:checked {
   }
 
   .slider-window {
-    width: 27rem;
-    height: 27rem;
+    width: 30rem;
+    height: 36rem;
   }
 
   .slider-track {
-    width: calc(27rem * 5);
+    width: calc(30rem * 5);
   }
 
   .description {

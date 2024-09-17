@@ -105,7 +105,7 @@ input {
 }
 
 .slider #radio1:checked ~ .labels label[for='radio1'] .style-label {
-  border: 2px solid white;
+  border: 0.2rem solid white;
   background-color: transparent;
 }
 
@@ -114,7 +114,7 @@ input {
 }
 
 .slider #radio2:checked ~ .labels label[for='radio2'] .style-label {
-  border: 2px solid white;
+  border: 0.2rem solid white;
   background-color: transparent;
 }
 
@@ -123,7 +123,7 @@ input {
 }
 
 .slider #radio3:checked ~ .labels label[for='radio3'] .style-label {
-  border: 2px solid white;
+  border: 0.2rem solid white;
   background-color: transparent;
 }
 
@@ -132,7 +132,7 @@ input {
 }
 
 .slider #radio4:checked ~ .labels label[for='radio4'] .style-label {
-  border: 2px solid white;
+  border: 0.2rem solid white;
   background-color: transparent;
 }
 
@@ -141,61 +141,61 @@ input {
 }
 
 .slider #radio5:checked ~ .labels label[for='radio5'] .style-label {
-  border: 2px solid white;
+  border: 0.2rem solid white;
   background-color: transparent;
 }
 
 /* CHECKED LABEL HOVER */
 
 .slider #radio1:checked ~ .labels label[for='radio1']:hover .style-label {
-  border: 2px solid #4bb192;
+  border: 0.2rem solid #4bb192;
   background-color: transparent;
 }
 
 .slider #radio2:checked ~ .labels label[for='radio2']:hover .style-label {
-  border: 2px solid #4bb192;
+  border: 0.2rem solid #4bb192;
   background-color: transparent;
 }
 
 .slider #radio3:checked ~ .labels label[for='radio3']:hover .style-label {
-  border: 2px solid #4bb192;
+  border: 0.2rem solid #4bb192;
   background-color: transparent;
 }
 
 .slider #radio4:checked ~ .labels label[for='radio4']:hover .style-label {
-  border: 2px solid #4bb192;
+  border: 0.2rem solid #4bb192;
   background-color: transparent;
 }
 
 .slider #radio5:checked ~ .labels label[for='radio5']:hover .style-label {
-  border: 2px solid #4bb192;
+  border: 0.2rem solid #4bb192;
   background-color: transparent;
 }
 
 /* CHECKED LABEL ACTIVE */
 
 .slider #radio1:checked ~ .labels label[for='radio1']:active .style-label {
-  border: 2px solid #083443;
+  border: 0.2rem solid #083443;
   background-color: transparent;
 }
 
 .slider #radio2:checked ~ .labels label[for='radio2']:active .style-label {
-  border: 2px solid #083443;
+  border: 0.2rem solid #083443;
   background-color: transparent;
 }
 
 .slider #radio3:checked ~ .labels label[for='radio3']:active .style-label {
-  border: 2px solid #083443;
+  border: 0.2rem solid #083443;
   background-color: transparent;
 }
 
 .slider #radio4:checked ~ .labels label[for='radio4']:active .style-label {
-  border: 2px solid #083443;
+  border: 0.2rem solid #083443;
   background-color: transparent;
 }
 
 .slider #radio5:checked ~ .labels label[for='radio5']:active .style-label {
-  border: 2px solid #083443;
+  border: 0.2rem solid #083443;
   background-color: transparent;
 }
 

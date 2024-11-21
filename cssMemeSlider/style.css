@@ -1,0 +1,254 @@
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #202229;
+}
+
+/* SLIDER */
+
+.container {
+  justify-content: center;
+}
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-window {
+  max-width: 50rem;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  align-items: flex-end;
+  width: 500%;
+  transition: all 0.5s ease;
+}
+
+.image {
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.description {
+  width: 35rem;
+  overflow: hidden;
+}
+
+.description-track {
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+.text {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  width: 35rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* LABEL */
+
+.labels {
+  display: flex;
+  align-self: flex-end;
+  transform: translateY(2.5rem);
+}
+
+label {
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+}
+
+label .style-label {
+  box-sizing: border-box;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #4b5fb1;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+/* INPUT radio */
+
+input {
+  display: none;
+}
+
+#radio1:checked ~ .slider-window .slider-track {
+  transform: translateX(0);
+}
+
+.slider #radio1:checked ~ .labels label[for='radio1'] .style-label {
+  border: 0.2rem solid white;
+  background-color: transparent;
+}
+
+#radio2:checked ~ .slider-window .slider-track {
+  transform: translateX(-20%);
+}
+
+.slider #radio2:checked ~ .labels label[for='radio2'] .style-label {
+  border: 0.2rem solid white;
+  background-color: transparent;
+}
+
+#radio3:checked ~ .slider-window .slider-track {
+  transform: translateX(-40%);
+}
+
+.slider #radio3:checked ~ .labels label[for='radio3'] .style-label {
+  border: 0.2rem solid white;
+  background-color: transparent;
+}
+
+#radio4:checked ~ .slider-window .slider-track {
+  transform: translateX(-60%);
+}
+
+.slider #radio4:checked ~ .labels label[for='radio4'] .style-label {
+  border: 0.2rem solid white;
+  background-color: transparent;
+}
+
+#radio5:checked ~ .slider-window .slider-track {
+  transform: translateX(-80%);
+}
+
+.slider #radio5:checked ~ .labels label[for='radio5'] .style-label {
+  border: 0.2rem solid white;
+  background-color: transparent;
+}
+
+/* CHECKED LABEL HOVER */
+
+.slider #radio1:checked ~ .labels label[for='radio1']:hover .style-label {
+  border: 0.2rem solid #4bb192;
+  background-color: transparent;
+}
+
+.slider #radio2:checked ~ .labels label[for='radio2']:hover .style-label {
+  border: 0.2rem solid #4bb192;
+  background-color: transparent;
+}
+
+.slider #radio3:checked ~ .labels label[for='radio3']:hover .style-label {
+  border: 0.2rem solid #4bb192;
+  background-color: transparent;
+}
+
+.slider #radio4:checked ~ .labels label[for='radio4']:hover .style-label {
+  border: 0.2rem solid #4bb192;
+  background-color: transparent;
+}
+
+.slider #radio5:checked ~ .labels label[for='radio5']:hover .style-label {
+  border: 0.2rem solid #4bb192;
+  background-color: transparent;
+}
+
+/* CHECKED LABEL ACTIVE */
+
+.slider #radio1:checked ~ .labels label[for='radio1']:active .style-label {
+  border: 0.2rem solid #083443;
+  background-color: transparent;
+}
+
+.slider #radio2:checked ~ .labels label[for='radio2']:active .style-label {
+  border: 0.2rem solid #083443;
+  background-color: transparent;
+}
+
+.slider #radio3:checked ~ .labels label[for='radio3']:active .style-label {
+  border: 0.2rem solid #083443;
+  background-color: transparent;
+}
+
+.slider #radio4:checked ~ .labels label[for='radio4']:active .style-label {
+  border: 0.2rem solid #083443;
+  background-color: transparent;
+}
+
+.slider #radio5:checked ~ .labels label[for='radio5']:active .style-label {
+  border: 0.2rem solid #083443;
+  background-color: transparent;
+}
+
+#radio1:checked ~ .description .description-track {
+  transform: translateX(0);
+}
+
+#radio2:checked ~ .description .description-track {
+  transform: translateX(-100%);
+}
+
+#radio3:checked ~ .description .description-track {
+  transform: translateX(-200%);
+}
+
+#radio4:checked ~ .description .description-track {
+  transform: translateX(-300%);
+}
+
+#radio5:checked ~ .description .description-track {
+  transform: translateX(-400%);
+}
+
+/* hover */
+
+label:hover .style-label {
+  background-color: #fff;
+}
+
+label:active .style-label {
+  background-color: #083443;
+}
+
+@media screen and (max-width: 520px) {
+  .slider {
+    gap: 1rem;
+  }
+
+  .slider-window {
+    width: 30rem;
+    height: 36rem;
+  }
+
+  .slider-track {
+    width: calc(30rem * 5);
+  }
+
+  .description {
+    width: 25rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+    width: 25rem;
+  }
+
+  .labels {
+    align-self: center;
+    transform: translateY(0);
+  }
+
+  label .style-label {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
